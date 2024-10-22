@@ -176,12 +176,12 @@ document
 
     // Send the email using EmailJS
     emailjs.sendForm("service_a2ysbvq", "template_cyhuffb", form).then(
-      async function () {
+       function () {
         // Display success notification
-        await toastr.success(" Email Sended");
+        alert( "Submit Success")
       },
-      async function (error) {
-        await toastr.error(" Email Not Sended");
+       function (error) {
+        alert( "Submit  Not Success")
         console.error("EmailJS error:", error);
       }
     );
